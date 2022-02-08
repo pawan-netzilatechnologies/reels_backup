@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+svg,
+img {
+  pointer-events: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.video-wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.reaction-btn {
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.reaction-btn svg,
+.reaction-btn span {
+  pointer-events: none;
+}
+
+.reaction-btn svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Comments */
+.comments {
+  top: 45%;
+  background: #f4f4f4;
+  height: 80%;
+}
+
+.comments-wrapper {
+  height: 90%;
+}
+
+.wrapper {
+  position: fixed;
+  left: 50%;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 95%;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.active,
+.volume.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.comments h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+}
+
+.comments .card {
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.comments img {
+  border-radius: 10px;
+  padding-right: 5px;
+  width: 60px;
+  height: 55px;
+}
+
+.comments img:hover {
+  cursor: pointer;
+}
+
+.comments .round .align-self-start {
+  border-radius: 100%;
+  width: 45px;
+  height: 40px;
+}
+
+.comments .media .comment {
+  background: #f4f4f4;
+  border: none;
+  border-radius: 10px;
+}
+
+.comments h6.user {
+  color: #5c5c5c;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+.comments h6.user:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.comments p.text {
+  margin-bottom: 0;
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.comments .ml-auto {
+  margin-right: 10px;
+}
+
+.comments p .reply {
+  color: #5c5c5c;
+  font-size: 15px;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.close-svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.reactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  bottom: 10%;
+}
+
+.emoji img {
+  width: 6rem;
+}
+
+/* Volume controls */
+.volume-container {
+  position: fixed;
+  z-index: 999;
+  top: 1rem;
+  right: 1rem;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.volume-container figure {
+  /* pointer-events: none; */
+}
+
+.volume-container img {
+  pointer-events: all;
+}
+
+.volume {
+  transition: all 0.8s;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.volume.active {
+  display: block;
+}
+
+.volume img {
+  width: 2.5rem;
+}
+
+/* Add video */
+.add_video-container {
+  background: #f4f8ff;
+  top: 50%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  height: 18rem;
+}
+
+.add_video-container .close-btn {
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.add_video-container p {
+  margin-bottom: 0;
+}
+
+.select-video {
+  position: absolute;
+  width: 1px;
+  left: -10000000px;
+}
+
+.select-video-btn {
+  padding: 1rem 3rem;
+  background: #197dff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}

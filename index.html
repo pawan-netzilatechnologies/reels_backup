@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels</title>
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+      poster="/images/loader.svg"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/splide.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="volume-container">
+      <figure class="volume sound">
+        <img src="./Images/speaker-filled-audio-tool.png" alt="sound" />
+      </figure>
+      <figure class="volume mute active">
+        <img src="./Images/volume-mute.png" alt="mute" />
+      </figure>
+    </div>
+    <div class="btn-container">
+      <div class="comments-container">
+        <button class="add_comment reaction-btn">
+          <svg><use href="./Images/sprite.svg#message-circle"></use></svg>
+          <span>Comments</span>
+        </button>
+        <div class="comments wrapper">
+          <div class="container pt-4">
+            <button class="close-btn">
+              <svg class="close-svg">
+                <use href="./Images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="row">
+              <h3 class="text-center">comments</h3>
+            </div>
+          </div>
+          <div
+            class="container overflow-auto comments-wrapper mt-1 d-flex justify-content-center"
+          >
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <ul class="list-unstyled">
+                    <!--FIRST LIST ITEM-->
+                    <li class="media">
+                      <span class="round pt-2"
+                        ><img
+                          src="https://img.icons8.com/bubbles/100/000000/groups.png"
+                          class="align-self-start mr-3"
+                      /></span>
+                      <div class="media-body">
+                        <div class="row d-flex">
+                          <h6 class="user pt-2">Michael Andrews</h6>
+                          <div class="ml-auto">
+                            <p class="text">3m</p>
+                          </div>
+                        </div>
+                        <p class="text">Liked four of your artworks</p>
+                        <div class="images mt-2">
+                          <img
+                            src="https://img.icons8.com/bubbles/100/000000/couple-icloud.png"
+                          />
+                          <img
+                            src="https://img.icons8.com/bubbles/100/000000/check-male.png"
+                          />
+                          <img
+                            src="https://img.icons8.com/bubbles/100/000000/lock-female-user.png"
+                          />
+                          <img
+                            src="https://img.icons8.com/bubbles/100/000000/lock-male-user.png"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <!--SECOND LIST ITEM-->
+                    <li class="media my-5">
+                      <span class="round">
+                        <img
+                          src="https://img.icons8.com/bubbles/100/000000/lock-female-user.png"
+                          class="align-self-start mr-3"
+                        />
+                      </span>
+                      <div class="media-body">
+                        <div class="row d-flex">
+                          <h6 class="user">Craig Carder</h6>
+                          <div class="ml-auto">
+                            <p class="text">9m</p>
+                          </div>
+                        </div>
+                        <p class="text">Followed you</p>
+                      </div>
+                    </li>
+                    <!--THIRD LIST ITEM-->
+                    <li class="media">
+                      <span class="round"
+                        ><img
+                          src="https://img.icons8.com/bubbles/100/000000/groups.png"
+                          class="align-self-start mr-3"
+                      /></span>
+                      <div class="media-body">
+                        <div class="row d-flex">
+                          <h6 class="user">
+                            Allison Kenter, Alhena Culhane and 57 others
+                          </h6>
+                          <div class="ml-auto">
+                            <p class="text">1h</p>
+                          </div>
+                        </div>
+                        <p class="text mb-2">
+                          Liked your "Women in Jail" Artwork
+                        </p>
+                        <img
+                          src="https://img.icons8.com/bubbles/100/000000/lock-female-user.png"
+                        />
+                      </div>
+                    </li>
+                    <!--FOURTH LIST ITEM-->
+                    <li class="media my-5">
+                      <span class="round"
+                        ><img
+                          src="https://img.icons8.com/office/100/000000/user-group-man-man--v1.png"
+                          class="align-self-start mr-3"
+                      /></span>
+                      <div class="media-body">
+                        <div class="row d-flex">
+                          <h6 class="user">Giana Ekstrom Bothman</h6>
+                          <div class="ml-auto">
+                            <p class="text">2h</p>
+                          </div>
+                        </div>
+                        <p class="text">Commented on your"Le Doux" Artwork</p>
+                        <div class="media mt-3 comment">
+                          <a href="#"
+                            ><img
+                              src="https://img.icons8.com/bubbles/100/000000/lock-male-user.png"
+                              class="align-self-center mr-1"
+                          /></a>
+                          <div class="media-body">
+                            <p class="reply">
+                              "Love this art, what inspired you to make this<br />&nbsp;wonderful
+                              artwork?"
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--FIFTH LIST ITEM-->
+                    <li class="media">
+                      <span class="round"
+                        ><img
+                          src="https://img.icons8.com/office/100/000000/user-group-woman-woman.png"
+                          class="align-self-start mr-3"
+                      /></span>
+                      <div class="media-body">
+                        <div class="row d-flex">
+                          <h6 class="user">Leo Aminoff</h6>
+                          <div class="ml-auto">
+                            <p class="text">24h</p>
+                          </div>
+                        </div>
+                        <p class="text">Bought your "Palace of Versailles"</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add-video-container">
+        <button class="add_video reaction-btn">
+          <svg><use href="./images/sprite.svg#plus-square"></use></svg>
+          <span>Add video</span>
+        </button>
+        <div
+          class="files add_video-container wrapper d-flex flex-column justify-content-center align-items-center"
+        >
+          <button class="close-btn">
+            <svg class="close-svg">
+              <use href="./Images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <input type="file" name="file" class="select-video" />
+          <button class="select-video-btn">Choose Files</button>
+          <p class="mt-3">Or drop files here.</p>
+        </div>
+      </div>
+      <div class="reactions-container">
+        <button class="add-reaction reaction-btn">
+          <svg><use href="./images/sprite.svg#smile"></use></svg>
+          <span>Reactions</span>
+        </button>
+        <div class="reactions wrapper">
+          <figure class="emoji">
+            <img src="./Images/1.gif" alt="Emoji" />
+          </figure>
+          <figure class="emoji">
+            <img src="./Images/2.gif" alt="Emoji" />
+          </figure>
+          <figure class="emoji">
+            <img src="./Images/3.gif" alt="Emoji" />
+          </figure>
+          <figure class="emoji">
+            <img src="./Images/4.gif" alt="Emoji" />
+          </figure>
+          <figure class="emoji">
+            <img src="./Images/5.gif" alt="Emoji" />
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="splide">
+      <div class="splide__track">
+        <div class="video-container splide__list"></div>
+      </div>
+    </div>
+  </body>
+</html>
